@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NestActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="计算器"
+            android:textSize="50dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lance"
+            android:textSize="30dp">
+        </TextView>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_below="@id/linearLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="6"
+        android:columnCount="4"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="0"
+            android:textSize="30dp"
+            android:layout_columnSpan="4"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+        </TextView>
+
+        <Button android:text="计算" android:layout_columnSpan="2" android:layout_gravity="fill"></Button>
+        <Button android:text="清空" android:layout_columnSpan="2" android:layout_gravity="fill"></Button>
+        <Button android:text="+"></Button>
+        <Button android:text="0"></Button>
+        <Button android:text="1"></Button>
+        <Button android:text="2"></Button>
+        <Button android:text="-"></Button>
+        <Button android:text="4"></Button>
+        <Button android:text="5"></Button>
+        <Button android:text="6"></Button>
+        <Button android:text="*"></Button>
+        <Button android:text="7"></Button>
+        <Button android:text="8"></Button>
+        <Button android:text="9"></Button>
+        <Button android:text="/"></Button>
+        <Button android:text="0"></Button>
+        <Button android:text="="></Button>
+        <Button android:text="."></Button>
+    </GridLayout>
+
+</RelativeLayout>
